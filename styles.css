@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 50vh;
+  background: #0d0024;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.menu {
+  width: 200px;
+  height: 200px;
+  margin: 8px;
+  background-image: linear-gradient(to right, #e91e63, #f44336);
+  border-radius: 16px;
+  cursor: pointer;
+}
+.menu div{
+  width: 120px;
+  height: 120px;
+  margin: 40px;
+  position: relative;
+}
+
+.menu span{
+  background: #fff;
+  width: 100px;
+  height: 10px;
+  border-radius: 5px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+/* Button 1 */
+.menu span:nth-child(1){
+  transform: translate(-50%, -40px);
+}
+.menu span:nth-child(3){
+  transform: translate(-50%, 30px);
+}
+
+/* Active 1 */
+.menu.active span:nth-child(1){
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.menu.active span:nth-child(2){
+  width: 0;
+}
+.menu.active span:nth-child(3){
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Button 2 */
+.container:nth-child(1) .menu:nth-child(2) span:nth-child(1){
+  width: 50%;
+  transform: translate(-50px, -40px);
+}
+.container:nth-child(1) .menu:nth-child(2) span:nth-child(3){
+  width: 50%;
+  transform: translate(-10px, 30px);
+}
+
+/* Active 2 */
+.container:nth-child(1) .menu:nth-child(2).active-2 span:nth-child(1){
+  width: 100px;
+  transform: translate(-50%, -50%) rotate(225deg);
+}
+.container:nth-child(1) .menu:nth-child(2).active-2 span:nth-child(2){
+  width: 0px;
+  opacity: 0;
+  transform: rotate(720deg);
+}
+.container:nth-child(1) .menu:nth-child(2).active-2 span:nth-child(3){
+  width: 100px;
+  transform: translate(-50%, -50%) rotate(-225deg);
+}
+
+/* Button 3 */
+.container:nth-child(2) .menu span:nth-child(1){
+  width: 50%;
+  transform: translate(-50px, -40px);
+}
+.container:nth-child(2) .menu span:nth-child(3){
+  width: 50%;
+  transform: translate(-10px, 30px);
+}
+
+/* Active 3 */
+.container:nth-child(2) .menu.active-3 span:nth-child(1){
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.container:nth-child(2) .menu.active-3 span:nth-child(2){
+  width: 0;
+}
+.container:nth-child(2) .menu.active-3 span:nth-child(3){
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Button 4 */
+.container:nth-child(2) .menu:nth-child(2) span:nth-child(1){
+  width: 50%;
+  transform: translate(-50px, -40px);
+}
+.container:nth-child(2) .menu:nth-child(2) span:nth-child(3){
+  width: 50%;
+  transform: translate(-10px, 30px);
+}
+
+/* Active 4 */
+.container:nth-child(2) .menu:nth-child(2).active-4 span:nth-child(1){
+  transform: translate(-100%, 14px) rotate(225deg);
+}
+.container:nth-child(2) .menu:nth-child(2).active-4 span:nth-child(3){
+  transform: translate(-100%, -23px) rotate(-225deg);
+}
