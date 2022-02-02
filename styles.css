@@ -37,7 +37,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: all 0.5s;
+  transition: all 0.35s;
 }
 
 /* Button 1 */
@@ -117,7 +117,7 @@
 
 /* Active 4 */
 .container:nth-child(2) .menu:nth-child(2).active-4 span:nth-child(1){
-  transform: translate(-100%, 14px) rotate(225deg);
+  transform: translate(-100%, 13px) rotate(225deg);
 }
 .container:nth-child(2) .menu:nth-child(2).active-4 span:nth-child(3){
   transform: translate(-100%, -23px) rotate(-225deg);
